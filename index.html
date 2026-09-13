@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav aria-label="Main navigation">
+
+            <h1>Task Manager</h1>
+
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#tasks">Tasks</a>
+                </li>
+
+                <li>
+                    <a href="#progress">Progress</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Welcome Section -->
+        <section id="home">
+
+            <h2>Organize Your Day</h2>
+
+            <p>
+                Manage your daily tasks simply and easily.
+            </p>
+
+            <!-- Task Form -->
+            <form id="taskForm">
+
+                <label for="taskInput">
+                    Enter a task
+                </label>
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                    required
+                >
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Tasks Section -->
+        <section id="tasks">
+
+            <h2>My Tasks</h2>
+
+            <!-- Task 1 -->
+            <article>
+
+                <h3>Study HTML</h3>
+
+                <p>
+                    Learn semantic HTML elements.
+                </p>
+
+                <button
+                    type="button"
+                    class="complete-btn">
+                    Complete
+                </button>
+
+                <button
+                    type="button"
+                    class="delete-btn">
+                    Delete
+                </button>
+
+            </article>
+
+
+            <!-- Task 2 -->
+            <article>
+
+                <h3>Complete internship work</h3>
+
+                <p>
+                    Work on the DecodeLabs Project 1.
+                </p>
+
+                <button
+                    type="button"
+                    class="complete-btn">
+                    Complete
+                </button>
+
+                <button
+                    type="button"
+                    class="delete-btn">
+                    Delete
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <!-- Progress Section -->
+        <section id="progress">
+
+            <h2>My Progress</h2>
+
+            <p>
+                Tasks completed: 0 / 2
+            </p>
+
+            <progress
+                value="0"
+                max="2">
+            </progress>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Task Manager
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
